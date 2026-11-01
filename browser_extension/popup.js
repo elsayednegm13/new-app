@@ -322,4 +322,4 @@ btnTheme.addEventListener("click", (e) => {
 
 btnVideo.addEventListener("click", () => sendCurrentTab("media"));
 btnSpider.addEventListener("click", () => sendCurrentTab("spider"));
-btnDialog.addEventListener("click", () => sendCurrentTab("dialo
+btnDialog.addEventListener("click", () => sendCurrentTab("dialog"));

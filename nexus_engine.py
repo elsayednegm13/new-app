@@ -5098,4 +5098,5 @@ class WebRemoteServer:
             try:
                 threading.Thread(target=srv.shutdown, daemon=True).start()
             except Exception:
-      
+                pass
+

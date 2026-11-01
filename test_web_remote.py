@@ -204,4 +204,9 @@ class TestPhase12Dialogs(unittest.TestCase):
         self.assertTrue(hasattr(dlg, "combo_action"))
         self.assertTrue(hasattr(dlg, "entry_cmd"))
         self.assertTrue(hasattr(dlg, "entry_wh"))
-      
+        dlg.destroy()
+
+
+if __name__ == "__main__":
+    unittest.main()
+

@@ -214,3 +214,7 @@ class TestAnalyticsDialog(unittest.TestCase):
 
         # Destroy cleanly
         dlg.destroy()
+
+
+if __name__ == "__main__":
+    unittest.main()

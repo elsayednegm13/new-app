@@ -216,4 +216,12 @@ if (chrome.downloads && chrome.downloads.onCreated) {
 }
 
 chrome.runtime.onMessage.addListener((msg, _sender, sendResponse) => {
-  if (msg && (msg.type === "NegmLoading_ACTION" || msg.typ
+  if (msg && (msg.type === "NegmLoading_ACTION" || msg.type === "NEGM_ACTION")) {
+    sendToNegm(msg.payload).then((ok) => sendResponse({ ok }));
+    return true;
+  }
+  if (msg && msg.type === "PING") {
+    sendResponse({ ok: true, version: "1.0.0" });
+    return false;
+  }
+});

@@ -2547,4 +2547,4 @@ class NexusStreamManagerApp(_AppBase):
 
 if __name__ == "__main__":
     app = NexusStreamManagerApp()
-    app.mainl
+    app.mainloop()

@@ -353,4 +353,4 @@
     scanForVideos();
   });
   obs.observe(document.body || document.documentElement, { childList: true, subtree: true });
-}
+})();
